@@ -3,7 +3,25 @@
 /* kira's section */
 
 /* lauren's section */
+.clickableCards {
+    display: flex
+}
 
+.membershipCard {
+    display: flex;
+    align-items: flex-start
+}
+
+.volunteerCard {
+    display:flex;
+    align-items: center;
+}
+
+.donateCard {
+    display: flex;
+    align-items: flex-end;
+
+}
 /* JT's section */
 
 /* JMO's footer section */
