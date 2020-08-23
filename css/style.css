@@ -4,7 +4,9 @@
 
 /* lauren's section */
 .clickableCards {
-    display: flex
+    display: flex;
+    justify-content: space-between;
+
 }
 
 .membershipCard {
@@ -19,8 +21,7 @@
 
 .donateCard {
     display: flex;
-    align-items: flex-end;
-
+    align-items: flex-end
 }
 /* JT's section */
 
