@@ -1,0 +1,137 @@
+/* /// MEDIA PAGE/// */ 
+
+body{
+    background-color: #FFFFFF; 
+}
+
+/* ///TEXT CSS/// */
+
+/* this is title of section */
+h1 {
+    border: 3px solid #D94431;
+    height: 0px;
+    padding: 0 30px;
+
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #373737;
+}
+
+.headLine {
+    background-color: #FFFFFF;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.03em;
+    color: #373737; 
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #373737;
+}
+
+
+/* ///IN THE NEWS/// */
+
+.newsGrid {
+    display: grid;
+    grid-template-rows: 616px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "testimony inTheNews";
+    margin: 10px;
+    padding: 30px;
+}
+
+#testimony {
+    grid-area: testimony;
+}
+
+#inTheNews{
+    grid-area: inTheNews;
+}
+
+/* ///SOCIAL MEDIA/// */
+
+.socialGrid{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: #373737; 
+
+    display: grid;
+    grid-template-rows: 150px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "facebook instagram twitter";
+    column-gap: 50px;
+    margin: 250px;
+    align-items: center;
+    justify-items: center;
+}
+#faceBook, #instagram, #twitter{
+    padding: 50px;
+}
+
+#faceBook{
+    grid-area: facebook;
+    border: 8px solid #2D77A6;
+}
+
+#instagram{
+    grid-area: instagram;
+    border: 8px solid #4EA66D;
+}
+
+#twitter{
+    grid-area: twitter;
+    border: 8px solid #F2B441;
+}
+
+/* ///PHOTO GALLERY/// */
+
+.photoScroll{
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+}
+.photoScroll img{
+    width: 100%;
+    height: auto;
+}
+.horizontal-scroll-wrapper {
+    width: 300px;
+    height: 1000px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transform: rotate(-90deg) translateY(-200px);
+    transform-origin: right top;
+    background-color: blue;
+  }
+  .horizontal-scroll-wrapper > div {
+    width: 100px;
+    height: 600px;
+    transform: rotate(90deg);
+    transform-origin: right top;
+  }
