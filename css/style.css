@@ -213,22 +213,20 @@
 
 /* JMO's footer section */
 .footer {
-
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: #373737;
+    margin-top: 64px;
     
   }
   
-  .footer a {
-    padding: 20px 40px;
-    font-family: Oswald, Montserrat;
-    text-decoration: none;
-  }
-  
-  
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "Pavilion contact usefullinks socials";
+    padding-top: 16px;
+    padding-left: 82px;
+}
 
 .P {
 font-family: Montserrat;
@@ -236,9 +234,7 @@ font-style: normal;
 font-weight: normal;
 font-size: 13px;
 line-height: 16px;
-display: flex;
 align-items: center;
-
 color: #FFFFFF; 
 
 
@@ -250,10 +246,41 @@ font-style: normal;
 font-weight: bold;
 font-size: 15px;
 line-height: 22px;
-display: flex;
 align-items: center;
 letter-spacing: 0.05em;
-
 color: #F2F2F2;
 
+}
+
+.socialIcons {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 16px;
+align-items: center;
+color: #FFFFFF; 
+
+}
+
+.Pavilion {
+    display: grid;
+    grid-area: Pavilion;
+    width: 219px;
+}
+
+.contact {
+    display: grid;
+    grid-area: contact;
+    width: 244px;
+}
+
+.usefullinks {
+    display: grid;
+    grid-area: usefullinks;
+}
+
+.socials {
+    display: grid;
+    grid-area: socials;
 }
