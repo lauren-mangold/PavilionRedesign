@@ -1,4 +1,155 @@
 /* jenna's header css */
+.top-header {
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas: 
+    "logo top-contact";
+    color: #373737;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    width: 1440px;
+    height: 65px;
+    left: 0px;
+    top: 0px;
+
+}
+
+.logo {
+    grid-area: logo; 
+    display: flex;
+    align-items: center;
+
+
+}
+
+.top-contact {
+    grid-area: top-contact;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 67px;
+
+}
+
+/*can't figure out how to move up the top-contact section a smidge
+so it's not so close to the nav bar*/
+
+.top-contact img {
+    max-height: 18px;
+    max-width: 20px;
+    margin: 0 12px;
+    
+    
+}
+
+.global-top-nav {
+    background-color: #373737;
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    position: absolute;
+    width: 1440px;
+    height: 42px;
+    left: 0px;
+    top: 80px;
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas: 
+    "menu-items buttons"
+    
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.menu-items {
+    grid-area: menu-items;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 55px;
+}
+
+.buttons {
+    grid-area: buttons;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+    
+}
+
+button {
+    width: 145px;
+    height: 30px;   
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 500px;
+    margin-right: 20px;
+
+}
+
+#donate {
+    background-color: #f1bf62;
+    color: #373737;
+    
+
+}
+    
+#login {
+    background: #373737;  
+    color: white;      
+
+}
+
+/*i have no idea how to fix the border radius/margin thing going on here*/
+
+.hero-image {
+    position: absolute;
+    width: 1440px;
+    height: 500px;
+    left: 0px;
+    top: 120px;
+}
+
+.banner {
+    color: white;
+    background-color: #2D77A6;
+    position: absolute;
+    width: 1440px;
+    height: 396px;
+    left: 0px;
+    top: 500px;
+
+}
+
+#large-quote {
+    
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    text-align: center;
+    padding: 30px;
+
+}
+
+#small-quote {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 32px;
+
+    text-align: center;
+    
+}
 
 /* kira's section */
 
