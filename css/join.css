@@ -1,0 +1,164 @@
+/* Lauren’s Page coded using CSS flex and grid-->? */
+
+.heading {
+    text-align: center;    
+    width: 300px;
+    margin: 50px auto;
+}
+
+h1 {
+    font-family: "Oswald";
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #373737;
+
+}
+
+.joinUs {
+    overflow: hidden;
+    text-align: center;
+}
+
+.joinUs > span {
+    position: relative;
+    display: inline-block;
+}
+
+.joinUs > span:before, .joinUs > span:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 3px solid #D94431;
+    width: 100vw;
+    margin: 0 20px;
+}
+
+.joinUs > span:before {
+    right: 100%;
+}
+
+.joinUs > span:after {
+    left: 100%;
+}
+
+.imageCarousel {
+    display: flex;
+    margin-left: 57px;
+    margin-right: 57px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.membership {
+    display: flex;
+    font-family: "Oswald";
+    font-size: 30;
+    font-weight: 700;
+    color: #F2F2F2;
+    background-color: #373737;
+    width: 368px;
+    height: 52px;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.volunteer {
+    display: flex;
+    font-family: "Oswald";
+    font-size: 30;
+    font-weight: 700;
+    color: #F2F2F2;
+    background-color: #373737;
+    width: 368px;
+    height: 52px;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+    margin-top: 57px;
+}
+
+.memberParagraph {
+    font-family: Montserrat;
+    padding-right: 60px;
+    display: grid;
+    grid-area: memberParagraph;
+    margin-left: 74px;
+}
+
+.memberButton button{
+    display: grid;
+    grid-area: memberButton;
+    background-color: #2D77A6;
+    color: #FFFFFF;
+    font-size: 36;
+    font-weight: 700;
+    font-family: "Oswald";
+    width: 256px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 198px;;
+}
+
+#membershipInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 85% 15%;
+    grid-template-areas:
+    "memberParagraph memberImage"
+    "memberButton memberImage";
+    margin-bottom: 20px;
+}
+
+#memberImage {
+    display: grid;
+    grid-area: memberImage;
+}
+#volunteerInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 85% 15%;
+    grid-template-areas:
+    "volunteerParagraph volunteerImage"
+    "volunteerButton volunteerImage";
+    margin-bottom: 20px;
+}
+
+.volunteerParagraph {
+    font-family: Montserrat;
+    padding-right: 60px;
+    display: grid;
+    grid-area: volunteerParagraph;
+    margin-left: 74px;
+}
+
+.volunteerButton button{
+    display: grid;
+    grid-area: volunteerButton;
+    background-color: #2D77A6;
+    color: #FFFFFF;
+    font-size: 18;
+    font-weight: 700;
+    font-family: "Oswald";
+    width: 256px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 198px;
+}
+
+#volunteerImage {
+    display: grid;
+    grid-area: volunteerImage;
+}
