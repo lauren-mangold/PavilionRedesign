@@ -150,17 +150,16 @@ button {
     
 }
 
-/* kira's section */
 
 /* <!-- Lauren’s Work Section coded using CSS flex -->*/
 
 .clickableCards {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    background: #FFFFFF;
+    background: linear-gradient(to top, #4EA66D 75%, #FFFFFF 0%);
     margin: 30px, 140px, 30px, 140px;
-
 
 }
 
@@ -200,6 +199,7 @@ button {
     background: #FFFFFF;
     border: 8px solid #2D77A6;
     box-sizing: border-box;
+    outline: 18px solid white;
     left: 19px;
     top: 18px;
 
@@ -209,6 +209,7 @@ button {
     background: #FFFFFF;
     border: 8px solid #4EA66D;
     box-sizing: border-box;
+    outline: 18px solid white;
     left: 19px;
     top: 18px;
 }
@@ -217,6 +218,7 @@ button {
     background: #FFFFFF;
     border: 8px solid #F2B441;
     box-sizing: border-box;
+    outline: 18px solid white;
     left: 19px;
     top: 18px;
 }
@@ -224,6 +226,7 @@ button {
 .greenBackground {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: #4EA66D;
     justify-content: space-evenly;
     align-items: center;
@@ -238,6 +241,7 @@ button {
     line-height: 53px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    margin-top: 42px;
 }
 
 .icons {
@@ -253,15 +257,18 @@ button {
 .testimonyCards {
     display: flex;
     flex-direction: row;
-    background-color: #4EA66D;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    background: linear-gradient(to bottom, #4EA66D 40%, #FFFFFF 0%);
 
 }
 
 .testimonyCard {
     width: 250px;
     height: 255px;
+    margin-top: 47px;
+
 }
 
 .testimonyTitle {
@@ -274,6 +281,13 @@ button {
     color: #373737;
 }
 
+@media only screen and (max-width: 600px) {
+    .clickableCards {
+        flex-direction: column;
+        margin-left: 100px;
+    }
+
+}
 
 /* JT's section */
 .contactUs {

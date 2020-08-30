@@ -19,7 +19,6 @@ h1 {
 }
 
 .joinUs {
-    overflow: hidden;
     text-align: center;
 }
 
@@ -33,7 +32,7 @@ h1 {
     position: absolute;
     top: 50%;
     border-bottom: 3px solid #D94431;
-    width: 100vw;
+    width: 35vw;
     margin: 0 20px;
 }
 
@@ -47,6 +46,7 @@ h1 {
 
 .imageCarousel {
     display: flex;
+    flex-wrap: wrap;
     margin-left: 57px;
     margin-right: 57px;
     justify-content: space-between;
@@ -161,4 +161,23 @@ h1 {
 #volunteerImage {
     display: grid;
     grid-area: volunteerImage;
+}
+
+@media only screen and (max-width: 600px) {
+    #membershipInfo {
+        grid-template-columns: 1fr;
+        grid-template-rows: 42.5% 15% 42.5%;
+        grid-template-areas: 
+        "memberParagraph" 
+        "memberButton" 
+        "memberImage";
+    }
+    #volunteerInfo {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50% 10% 40%;
+        grid-template-areas: 
+        "volunteerParagraph" 
+        "volunteerButton" 
+        "volunteerImage";
+    }
 }

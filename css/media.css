@@ -7,24 +7,40 @@ body{
 /* ///TEXT CSS/// */
 
 /* this is title of section */
-h1 {
-    border: 3px solid #D94431;
-    height: 0px;
-    padding: 0 30px;
-
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 53px;
+.wrapper {
     display: flex;
+    height: auto;
+    box-sizing: border-box; 
+  }
+  
+  .title {
+    width: 950px;
+    height: auto;
+    margin: auto;
+    text-align: justify;
+    padding: 0 50px 20px 50px;
+  }
+  
+  .headLine {
+    margin: 30px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    min-width: 100px;
     align-items: center;
-    justify-content: center;
-    color: #373737;
-}
-
-.headLine {
-    background-color: #FFFFFF;
-}
+  }
+  .headLine h2 {
+    display: flex;
+    flex-wrap: nowrap;
+    font-family:  'Oswald', sans-serif;
+  }
+  
+  .headLine hr {
+    margin-top: 12px;
+    background-color: #D94431;
+    width: 40%;
+    height: 3px;
+  }
 
 h3 {
     font-family: 'Oswald', sans-serif;
@@ -72,14 +88,13 @@ p {
 }
 
 /* ///SOCIAL MEDIA/// */
-
 .socialGrid{
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     font-size: 36px;
     color: #373737; 
 
-    display: grid;
+    display: flex grid;
     grid-template-rows: 150px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
@@ -120,18 +135,34 @@ p {
     width: 100%;
     height: auto;
 }
-.horizontal-scroll-wrapper {
-    width: 300px;
-    height: 1000px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    transform: rotate(-90deg) translateY(-200px);
-    transform-origin: right top;
-    background-color: blue;
+/* @media only screen and (max-width: 1000px){
+  #navigation{
+    display: none;
   }
-  .horizontal-scroll-wrapper > div {
-    width: 100px;
-    height: 600px;
-    transform: rotate(90deg);
-    transform-origin: right top;
+  .icons{
+    margin-left: auto;
   }
+}
+@media only screen and (max-width: 600px){
+  #headline{
+    position: static;
+    margin: 20px;
+  }
+  #heroGrid{
+  grid-template-areas: 
+  "featuredProduct featuredProduct"
+  "secondaryProduct CTA"
+  ;
+  }
+  #categoryGrid{
+  grid-template-rows: 300px 300px 300px 300px 300px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "bookcases"
+    "bedroom"
+    "patio"
+    "couches"
+    "desks"
+    ;
+  }
+} */
