@@ -48,8 +48,10 @@
 
 #membership {
     background: #FFFFFF;
+    position: relative;
     border: 8px solid #2D77A6;
     box-sizing: border-box;
+    outline: 18px solid white;
     left: 19px;
     top: 18px;
 
@@ -57,16 +59,20 @@
 
 #volunteer {
     background: #FFFFFF;
+    position: relative;
     border: 8px solid #4EA66D;
     box-sizing: border-box;
+    outline: 18px solid white;
     left: 19px;
     top: 18px;
 }
 
 #donateCard {
     background: #FFFFFF;
+    position: relative;
     border: 8px solid #F2B441;
     box-sizing: border-box;
+    outline: 18px solid white;
     left: 19px;
     top: 18px;
 }
@@ -88,6 +94,7 @@
     line-height: 53px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    margin-top: 42px;
 }
 
 .icons {
@@ -112,6 +119,8 @@
 .testimonyCard {
     width: 250px;
     height: 255px;
+    margin-top: 47px;
+
 }
 
 .testimonyTitle {
