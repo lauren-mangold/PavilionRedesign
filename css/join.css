@@ -108,6 +108,12 @@ h1 {
     margin-left: 198px;;
 }
 
+.hover {
+    border: black;
+    text-shadow: 2px 2px 4px #000000;
+    box-shadow: black;
+}
+
 #membershipInfo {
     display: grid;
     grid-template-columns: 1fr 1fr;
