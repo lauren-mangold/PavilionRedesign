@@ -1,4 +1,4 @@
+console.log(
 $("button").hover(function(){
-    $(this).css("background-color", "red");
-
-})
+    $(this).css("border", "black");
+}));
