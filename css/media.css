@@ -100,8 +100,6 @@ button {
 
 }
 
-
-
 /* /// MEDIA PAGE///  */
 
 body{
@@ -211,8 +209,10 @@ p {
     align-items: center;
     justify-items: center;
 }
-#faceBook, #instagram, #twitter{
+#faceBook, #instagram, #twitter {
     padding: 50px;
+    color: #373737
+
 }
 
 #faceBook{
