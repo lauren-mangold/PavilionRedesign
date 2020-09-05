@@ -1,4 +1,106 @@
-/* /// MEDIA PAGE/// */ 
+/* Header and Nav */
+.top-header {
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-areas: 
+  "logo top-contact";
+  color: #373737;
+  font-family: 'Oswald', sans-serif;
+  /* position: absolute; */
+  width: 1440px;
+  height: 65px;
+  left: 0px;
+  top: 0px;
+  margin-bottom: 15px;
+
+}
+
+.logo {
+  grid-area: logo; 
+  display: flex;
+  align-items: center;
+}
+
+.top-contact {
+  grid-area: top-contact;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 67px;
+  margin-bottom: 20px;
+
+}
+.top-contact img {
+  max-height: 18px;
+  max-width: 20px;
+  margin: 0 12px;  
+}
+
+.global-top-nav {
+  background-color: #373737;
+  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  /* position: absolute; */
+  width: 1440px;
+  height: 42px;
+  left: 0px;
+  top: 80px;
+  display: grid;
+  grid-template-rows: 40px;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-areas: 
+  "menu-items buttons"
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.menu-items {
+  grid-area: menu-items;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 55px;
+}
+
+.buttons {
+  grid-area: buttons;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px;
+  
+}
+
+button {
+  width: 145px;
+  height: 30px;   
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 500px;
+  margin-right: 20px;
+
+}
+
+#donate {
+  background-color: #f1bf62;
+  color: #373737;
+  
+
+}
+  
+#login {
+  background: #373737;  
+  color: white;      
+
+}
+
+/* /// MEDIA PAGE///  */
 
 body{
     background-color: #FFFFFF; 
@@ -83,7 +185,7 @@ p {
     grid-area: testimony;
 }
 
-#inTheNews{
+#inTheNews {
     grid-area: inTheNews;
 }
 
@@ -94,18 +196,23 @@ p {
     font-size: 36px;
     color: #373737; 
 
-    display: flex grid;
+    display: grid;
     grid-template-rows: 150px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
         "facebook instagram twitter";
     column-gap: 50px;
-    margin: 250px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
     align-items: center;
     justify-items: center;
 }
-#faceBook, #instagram, #twitter{
+#faceBook, #instagram, #twitter {
     padding: 50px;
+    color: #373737
+
 }
 
 #faceBook{
@@ -132,8 +239,9 @@ p {
     padding: 10px;
 }
 .photoScroll img{
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin-left: 50px;
 }
 /* @media only screen and (max-width: 1000px){
   #navigation{
