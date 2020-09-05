@@ -239,8 +239,9 @@ p {
     padding: 10px;
 }
 .photoScroll img{
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin-left: 50px;
 }
 /* @media only screen and (max-width: 1000px){
   #navigation{
