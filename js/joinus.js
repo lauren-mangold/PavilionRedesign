@@ -19,3 +19,7 @@ $( "#calendar" ).scroll(function() {
     $("#submit").css("background-color","#f1bf62");
     $("#submit").css("color", "white");
 });
+
+$( ".photoScroll" ).scroll(function() {
+    $( "#log" ).append( "<div>Handler for .scroll() called.</div>" );
+  });
